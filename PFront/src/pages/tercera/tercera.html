@@ -1,0 +1,92 @@
+<!--
+  Generated template for the TerceraPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>tercera</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-list>
+
+        <ion-grid class="color11">
+            
+            <div class = "row">
+                <div class = "col">
+                    
+                  <ion-label color="dark"><h1>Pensando en el jefe o jefa del hogar,<p></p> ¿cuál fue el último año de estudios que aprobó en la escuela?</h1></ion-label>
+    
+                </div>
+    
+                <div class = "col col-offset-25, color11">
+                    <ion-item no-lines>
+                        <ion-label>Sin instrucción</ion-label>
+                        <ion-checkbox [(ngModel)]="a"></ion-checkbox>
+                    </ion-item>
+                    <ion-item no-lines>
+                        <ion-label>Preescolar</ion-label>
+                        <ion-checkbox [(ngModel)]="b"></ion-checkbox>
+                    </ion-item>
+                    <ion-item no-lines>
+                        <ion-label>Primaria incompleta</ion-label>
+                        <ion-checkbox [(ngModel)]="c"></ion-checkbox>
+                    </ion-item>
+                    <ion-item no-lines>
+                        <ion-label>Primaria completa</ion-label>
+                        <ion-checkbox [(ngModel)]="d"></ion-checkbox>
+                    </ion-item>
+                    <ion-item no-lines>
+                        <ion-label>Secundaria incompleta</ion-label>
+                        <ion-checkbox [(ngModel)]="e"></ion-checkbox>
+                    </ion-item>
+                    <ion-item no-lines>
+                        <ion-label>Secundaria completa</ion-label>
+                        <ion-checkbox [(ngModel)]="f"></ion-checkbox>
+                    </ion-item>
+                    <ion-item no-lines>
+                        <ion-label>Preparatoria incompleta</ion-label>
+                        <ion-checkbox [(ngModel)]="g"></ion-checkbox>
+                    </ion-item>
+                    <ion-item no-lines>
+                        <ion-label>Preparatoria completa</ion-label>
+                        <ion-checkbox [(ngModel)]="h"></ion-checkbox>
+                    </ion-item>
+                    <ion-item no-lines>
+                        <ion-label>Licenciatura incompleta</ion-label>
+                        <ion-checkbox [(ngModel)]="i"></ion-checkbox>
+                    </ion-item>
+                    <ion-item no-lines>
+                        <ion-label>Licenciatura completa</ion-label>
+                        <ion-checkbox [(ngModel)]="j"></ion-checkbox>
+                    </ion-item>
+                    <ion-item no-lines>
+                        <ion-label>Posgrado</ion-label>
+                        <ion-checkbox [(ngModel)]="k"></ion-checkbox>
+                    </ion-item>
+                </div>
+            </div>
+          </ion-grid>
+        
+    </ion-list>
+
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar color="danger">
+
+      <ion-buttons right>
+          <button ion-button icon-end [navPush]="cuartaPage">
+              Siguiente
+              <ion-icon name="arrow-round-forward"></ion-icon>
+          </button>
+      </ion-buttons>
+    </ion-toolbar>
+</ion-footer>

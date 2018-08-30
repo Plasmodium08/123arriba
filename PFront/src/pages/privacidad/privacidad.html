@@ -1,0 +1,30 @@
+<!--
+  Generated template for the PrivacidadPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Aviso de Privacidad</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-col align="center">
+    <h1><b>En la salud y en la adversidad, ¿aceptas contestar este cuestionario?</b></h1>
+    <ion-buttons>
+        <button ion-button icon-end [navPush]="registroPage">
+            Acepto
+            <ion-icon name="happy"></ion-icon>
+        </button>
+        <button ion-button color= "danger" icon-end [navPush]="homePage">
+            No acepto
+            <ion-icon name="sad"></ion-icon>
+        </button>
+    </ion-buttons>
+  </ion-col>
+</ion-content>

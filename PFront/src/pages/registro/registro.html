@@ -1,0 +1,62 @@
+<!--
+  Generated template for the RegistroPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <!--<ion-navbar>
+    <ion-title>Registro</ion-title>
+  </ion-navbar>-->
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-list>
+        <ion-item>
+          <ion-label color="primary" stacked><h2>Número de cuenta</h2></ion-label>
+          <ion-input type="number" placeholder="Ingresa tu número de cuenta"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label color="primary" stacked><h2>Fecha de Nacimiento</h2></ion-label>
+          <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
+        </ion-item>
+
+        <ion-grid>
+          <ion-label color="primary" stacked><h6>¿Eres?</h6></ion-label>
+          <ion-list radio-group [(ngModel)]="sexo">
+              <ion-item no-lines>
+                  <ion-label>Hombre</ion-label>
+                  <ion-radio value="hombre" checked></ion-radio>
+              </ion-item>
+              <ion-item no-lines>
+                  <ion-label>Mujer</ion-label>
+                  <ion-radio value="mujer" [disabled]="isDisabled"></ion-radio>
+              </ion-item>
+          </ion-list>
+        </ion-grid>
+
+        <ion-item>
+            <ion-label color="primary" stacked><h2>Contraseña</h2></ion-label>cd
+            <ion-input type="password" placeholder="Ingresa tu contraseña"></ion-input>
+          </ion-item>
+
+      </ion-list>
+
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar color="primary">
+
+      <ion-buttons right>
+          <button ion-button icon-end [navPush]="primeraPage">
+              Siguiente
+              <ion-icon name="arrow-round-forward"></ion-icon>
+          </button>
+      </ion-buttons>
+    </ion-toolbar>
+</ion-footer>
