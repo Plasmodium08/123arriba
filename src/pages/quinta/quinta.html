@@ -1,0 +1,423 @@
+<!--
+  Generated template for the NaranjaPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>naranja</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <p>Quisieramos saber si has tenido <u>problemas</u> con estas conductas <u>durante el mes pasado</u>.</p>
+  <p>Responde con qué frecuencia has tenido problemas con las siguietes conductas en donde:</p>
+  <p>N = si la conducta Nunca fue un problema.</p>
+  <p>O = si la conducta Ocasionalmete fue un problema</p>
+  <p>F = si la conducta Frecuentemente fue un problema</p>
+
+  <ion-list>
+
+    <ion-grid radio-group [(ngModel)]="naranja">
+
+      <ion-row class="formulario">
+
+          <ion-col>
+            <ion-item>
+              <ion-label>Tengo arranques de ira.</ion-label>
+            </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-label>N</ion-label>
+                  <ion-radio value="N"></ion-radio>
+              </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-label>O</ion-label>
+                  <ion-radio value="O"></ion-radio>
+              </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-label>F</ion-label>
+                  <ion-radio value="F"></ion-radio>
+              </ion-item>
+          </ion-col>
+          
+      </ion-row>
+
+      <ion-row class="formulario1">
+
+          <ion-col>
+            <ion-item>
+              <ion-label>Cometo errores simples cuando realizo alguna actividad.</ion-label>
+            </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-label>N</ion-label>
+                  <ion-radio value="N1"></ion-radio>
+              </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-label>O</ion-label>
+                  <ion-radio value="O1"></ion-radio>
+              </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-label>F</ion-label>
+                  <ion-radio value="F1"></ion-radio>
+              </ion-item>
+          </ion-col>
+          
+      </ion-row>
+
+      <ion-row class="formulario">
+
+          <ion-col>
+            <ion-item>
+              <ion-label>Soy desorganizado(a).</ion-label>
+            </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-label>N</ion-label>
+                  <ion-radio value="N2"></ion-radio>
+              </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-label>O</ion-label>
+                  <ion-radio value="O2"></ion-radio>
+              </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-label>F</ion-label>
+                  <ion-radio value="F2"></ion-radio>
+              </ion-item>
+          </ion-col>
+          
+      </ion-row>
+
+      <ion-row class="formulario1">
+
+          <ion-col>
+            <ion-item>
+              <ion-label>Me es difícil concentrarme en las tareas o actividades diarias, labores domésticas, lectura, escuela, trabajo, etc.</ion-label>
+            </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-label>N</ion-label>
+                  <ion-radio value="N3"></ion-radio>
+              </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-label>O</ion-label>
+                  <ion-radio value="O3"></ion-radio>
+              </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-label>F</ion-label>
+                  <ion-radio value="F3"></ion-radio>
+              </ion-item>
+          </ion-col>
+          
+      </ion-row>
+
+      <ion-row class="formulario">
+
+          <ion-col>
+            <ion-item>
+              <ion-label>Golpeteo con los dedos o no dejo de mover las piernas.</ion-label>
+            </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-label>N</ion-label>
+                  <ion-radio value="N5"></ion-radio>
+              </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-label>O</ion-label>
+                  <ion-radio value="O5"></ion-radio>
+              </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-label>F</ion-label>
+                  <ion-radio value="F5"></ion-radio>
+              </ion-item>
+          </ion-col>
+          
+      </ion-row>
+
+      <ion-row class="formulario1">
+
+          <ion-col>
+            <ion-item>
+              <ion-label>Deden recordarme que empiece una tarea o actividad, aunque esté dispuesto(a) a hacerla.</ion-label>
+            </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-label>N</ion-label>
+                  <ion-radio value="N6"></ion-radio>
+              </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-label>O</ion-label>
+                  <ion-radio value="O6"></ion-radio>
+              </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-label>F</ion-label>
+                  <ion-radio value="F6"></ion-radio>
+              </ion-item>
+          </ion-col>
+          
+      </ion-row>
+
+      <ion-row class="formulario">
+
+          <ion-col>
+            <ion-item>
+              <ion-label>Mi clóset está desordenado.</ion-label>
+            </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-label>N</ion-label>
+                  <ion-radio value="N7"></ion-radio>
+              </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-label>O</ion-label>
+                  <ion-radio value="O7"></ion-radio>
+              </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-label>F</ion-label>
+                  <ion-radio value="F7"></ion-radio>
+              </ion-item>
+          </ion-col>
+          
+      </ion-row>
+
+      <ion-row class="formulario1">
+
+          <ion-col>
+            <ion-item>
+              <ion-label>Me es difícil cambiar de una actividad o tarea a otra.</ion-label>
+            </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-label>N</ion-label>
+                  <ion-radio value="N8"></ion-radio>
+              </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-label>O</ion-label>
+                  <ion-radio value="O8"></ion-radio>
+              </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-label>F</ion-label>
+                  <ion-radio value="F8"></ion-radio>
+              </ion-item>
+          </ion-col>
+          
+      </ion-row>
+
+      <ion-row class="formulario">
+
+          <ion-col>
+            <ion-item>
+              <ion-label>Las tareas grandes me abruman.</ion-label>
+            </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-label>N</ion-label>
+                  <ion-radio value="N9"></ion-radio>
+              </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-label>O</ion-label>
+                  <ion-radio value="O9"></ion-radio>
+              </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-label>F</ion-label>
+                  <ion-radio value="F9"></ion-radio>
+              </ion-item>
+          </ion-col>
+          
+      </ion-row>
+
+      <ion-row class="formulario1">
+
+          <ion-col>
+            <ion-item>
+              <ion-label>Se me olvida mi nombre.</ion-label>
+            </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-label>N</ion-label>
+                  <ion-radio value="N10"></ion-radio>
+              </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-label>O</ion-label>
+                  <ion-radio value="O10"></ion-radio>
+              </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-label>F</ion-label>
+                  <ion-radio value="F10"></ion-radio>
+              </ion-item>
+          </ion-col>
+          
+      </ion-row>
+
+      <ion-row class="formulario">
+
+          <ion-col>
+            <ion-item>
+              <ion-label>Me es difícil hacer trabajos o tareas que tengan varios pasos.</ion-label>
+            </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-label>N</ion-label>
+                  <ion-radio value="N11"></ion-radio>
+              </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-label>O</ion-label>
+                  <ion-radio value="O11"></ion-radio>
+              </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-label>F</ion-label>
+                  <ion-radio value="F11"></ion-radio>
+              </ion-item>
+          </ion-col>
+          
+      </ion-row>
+
+      <ion-row class="formulario1">
+
+          <ion-col>
+            <ion-item>
+              <ion-label>Tiendo a exagerar emocionalmente.</ion-label>
+            </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-label>N</ion-label>
+                  <ion-radio value="N12"></ion-radio>
+              </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-label>O</ion-label>
+                  <ion-radio value="O12"></ion-radio>
+              </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-label>F</ion-label>
+                  <ion-radio value="F12"></ion-radio>
+              </ion-item>
+          </ion-col>
+          
+      </ion-row>
+
+      <ion-row class="formulario">
+
+          <ion-col>
+            <ion-item>
+              <ion-label>No me doy cuenta de que hago sentir mal o molesto a los demás hasta que ya es demasiado tarde.</ion-label>
+            </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-label>N</ion-label>
+                  <ion-radio value="N13"></ion-radio>
+              </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-label>O</ion-label>
+                  <ion-radio value="O13"></ion-radio>
+              </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-label>F</ion-label>
+                  <ion-radio value="F13"></ion-radio>
+              </ion-item>
+          </ion-col>
+          
+      </ion-row>
+
+      <ion-row class="formulario1">
+
+          <ion-col>
+            <ion-item>
+              <ion-label>Me es difícil prepararme para el día.</ion-label>
+            </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-label>N</ion-label>
+                  <ion-radio value="14"></ion-radio>
+              </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-label>O</ion-label>
+                  <ion-radio value="O14"></ion-radio>
+              </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-label>F</ion-label>
+                  <ion-radio value="F14"></ion-radio>
+              </ion-item>
+          </ion-col>
+          
+      </ion-row>
+
+    </ion-grid>
+
+  </ion-list>
+
+</ion-content>

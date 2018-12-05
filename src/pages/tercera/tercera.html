@@ -1,0 +1,231 @@
+<!--
+  Generated template for the TerceraPage page.
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+      <ion-title>tercera</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding>
+  
+      <ion-list>
+  
+          <ion-grid class="color11">
+              
+              <div class = "row">
+                  <div class = "col">
+                      
+                    <ion-label color="dark"><h1>Pensando en el jefe o jefa del hogar,<p></p> ¿cuál fue el último año de estudios que aprobó en la escuela?</h1></ion-label>
+      
+                  </div>
+      
+                  <div class = "col col-offset-25, color11">
+                      <ion-list radio-group [(ngModel)]="estudiosjefe">
+                          <ion-item no-lines>
+                              <ion-label>Sin instrucción</ion-label>
+                              <ion-radio value="noinstru"></ion-radio>
+                          </ion-item>
+                          <ion-item no-lines>
+                              <ion-label>Preescolar</ion-label>
+                              <ion-radio value="Preescolar"></ion-radio>
+                          </ion-item>
+                          <ion-item no-lines>
+                              <ion-label>Primaria incompleta</ion-label>
+                              <ion-radio value="noprimaria"></ion-radio>
+                          </ion-item>
+                          <ion-item no-lines>
+                              <ion-label>Primaria completa</ion-label>
+                              <ion-radio value="siprimaria"></ion-radio>
+                          </ion-item>
+                          <ion-item no-lines>
+                              <ion-label>Secundaria incompleta</ion-label>
+                              <ion-radio value="nosecu"></ion-radio>
+                          </ion-item>
+                          <ion-item no-lines>
+                              <ion-label>Secundaria completa</ion-label>
+                              <ion-radio value="sisecu"></ion-radio>
+                          </ion-item>
+                          <ion-item no-lines>
+                              <ion-label>Preparatoria incompleta</ion-label>
+                              <ion-radio value="noprepa"></ion-radio>
+                          </ion-item>
+                          <ion-item no-lines>
+                              <ion-label>Preparatoria completa</ion-label>
+                              <ion-radio value="siprepa"></ion-radio>
+                          </ion-item>
+                          <ion-item no-lines>
+                              <ion-label>Licenciatura incompleta</ion-label>
+                              <ion-radio value="nolic"></ion-radio>
+                          </ion-item>
+                          <ion-item no-lines>
+                              <ion-label>Licenciatura completa</ion-label>
+                              <ion-radio value="silic"></ion-radio>
+                          </ion-item>
+                          <ion-item no-lines>
+                              <ion-label>Posgrado</ion-label>
+                              <ion-radio value="posgrado"></ion-radio>
+                          </ion-item>
+                      </ion-list>
+                  </div>
+              </div>
+          </ion-grid>
+          
+          <ion-grid class="color12">
+             <div class="row">
+                 <div class="col">
+                      <ion-label color="dark"><h1>¿Cuantos baños completos con regadera y WC(excusado) <p></p>hay en esa vivienda?</h1></ion-label>
+                 </div>
+  
+                 <div class = "col col-offset-25, color12">
+                      <ion-list radio-group [(ngModel)]="banos">
+                          <ion-item no-lines>
+                              <ion-label>a) 0</ion-label>
+                              <ion-radio value="nobano"></ion-radio>
+                          </ion-item>
+                          <ion-item no-lines>
+                              <ion-label>b) 1</ion-label>
+                              <ion-radio value="unbano"></ion-radio>
+                          </ion-item>
+                          <ion-item no-lines>
+                              <ion-label>c) 2 ó más</ion-label>
+                              <ion-radio value="dosbano"></ion-radio>
+                          </ion-item>
+                      </ion-list> 
+                 </div>
+             </div>
+          </ion-grid>
+  
+          <ion-grid class="color11">
+              <div class="row">
+                  <div class="col">
+                      <ion-label color="dark"><h1>¿Cuantos automoviles o camionetas tiene en su hogar <p></p>incluyendo camionetas cerradas, o con cabina o caja? </h1></ion-label> 
+                  </div>
+  
+                  <div class="col-offset-25, color11">
+                      <ion-list radio-group [(ngModel)]="autos">
+                          <ion-item no-lines>
+                              <ion-label>a) 0</ion-label>
+                              <ion-radio value="noauto"></ion-radio>
+                          </ion-item>
+                          <ion-item no-lines>
+                              <ion-label>b) 1</ion-label>
+                              <ion-radio value="unauto"></ion-radio>
+                          </ion-item>
+                          <ion-item no-lines>
+                              <ion-label>c) dos ó más</ion-label>
+                              <ion-radio value="dosauto"></ion-radio>
+                          </ion-item>
+                      </ion-list>   
+                  </div>
+              </div>
+          </ion-grid>
+  
+          <ion-grid class="color12">
+              <div class="row">
+                  <div class="col">
+                      <ion-label color="dark"><h1>Sin tomar en cuenta la conexión móvil que pudiera tener <p></p>desde algún celular ¿este hogar cuenta con internet? </h1></ion-label> 
+                  </div>
+  
+                  <div class="col-offset-25, color12">
+                      <ion-list radio-group [(ngModel)]="internet">
+                          <ion-item no-lines>
+                              <ion-label>a) No tiene</ion-label>
+                              <ion-radio value="nointernet"></ion-radio>
+                          </ion-item>
+                          <ion-item no-lines>
+                              <ion-label>b) Sí tiene</ion-label>
+                              <ion-radio value="siinternet"></ion-radio>
+                          </ion-item>
+                      </ion-list>
+                  </div>
+              </div>
+          </ion-grid>
+  
+          <ion-grid class="color11">
+              <div class="row">
+                  <div class="col">
+                      <ion-label color="dark"><h1>De todas las personas de 14 años o más que viven en el <p></p>hogar, ¿cuántas trabajaron en el último mes? </h1></ion-label> 
+                  </div>
+  
+                  <div class="col-offset-25, color11">
+                      <ion-list radio-group [(ngModel)]="catorcetrabajo">
+                          <ion-item no-lines>
+                              <ion-label>a) 0</ion-label>
+                              <ion-radio value="nocatorce"></ion-radio>
+                          </ion-item>
+                          <ion-item no-lines>
+                              <ion-label>b) 1</ion-label>
+                              <ion-radio value="uncatorce"></ion-radio>
+                          </ion-item>
+                          <ion-item no-lines>
+                              <ion-label>c) 2</ion-label>
+                              <ion-radio value="doscatorce"></ion-radio>
+                          </ion-item>
+                          <ion-item no-lines>
+                              <ion-label>d) 3</ion-label>
+                              <ion-radio value="trescatorce"></ion-radio>
+                          </ion-item>
+                          <ion-item no-lines>
+                              <ion-label>e) 4 ó más</ion-label>
+                              <ion-radio value="cuatrocatorce"></ion-radio>
+                          </ion-item>
+  
+                      </ion-list>
+                  </div>
+              </div>
+          </ion-grid>
+  
+          <ion-grid class="color12">
+              <div class="row">
+                  <div class="col">
+                      <ion-label color="dark"><h1>En esta vivienda, ¿cuántos cuartos se usan para dormir, sin <p></p>contar pasillos ni baños? </h1></ion-label> 
+                  </div>
+  
+                  <div class="col-offset-25, color12">
+                      <ion-list radio-group [(ngModel)]="cuartosdormir">
+                          <ion-item no-lines>
+                              <ion-label>a) 0</ion-label>
+                              <ion-radio value="nocuarto"></ion-radio>
+                          </ion-item>
+                          <ion-item no-lines>
+                              <ion-label>b) 1</ion-label>
+                              <ion-radio value="uncuarto"></ion-radio>
+                          </ion-item>
+                          <ion-item no-lines>
+                              <ion-label>c) 2</ion-label>
+                              <ion-radio value="doscuarto"></ion-radio>
+                          </ion-item>
+                          <ion-item no-lines>
+                              <ion-label>d) 3</ion-label>
+                              <ion-radio value="trescuarto"></ion-radio>
+                          </ion-item>
+                          <ion-item no-lines>
+                              <ion-label>e) 4 ó más</ion-label>
+                              <ion-radio value="cuatrocuarto"></ion-radio>
+                          </ion-item>
+                      </ion-list>
+                  </div>
+              </div>
+          </ion-grid>
+  
+      </ion-list>
+  
+  </ion-content>
+  
+  <ion-footer>
+      <ion-toolbar color="">
+  
+        <ion-buttons right>
+            <button ion-button icon-end [navPush]="cuartaPage">
+                Siguiente
+                <ion-icon name="arrow-round-forward"></ion-icon>
+            </button>
+        </ion-buttons>
+      </ion-toolbar>
+  </ion-footer>

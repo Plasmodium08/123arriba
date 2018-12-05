@@ -1,0 +1,362 @@
+<!--
+  Generated template for the PrimeraPage page.
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+      <ion-title>primera</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding>
+  
+    <ion-list>
+        <ion-label color="dark" stacked><h1>¿En qué plantel estudias?</h1></ion-label>
+        <ion-item>
+            <ion-input type="number" placeholder="Anota el número"></ion-input>
+        </ion-item>
+  
+          <ion-grid>
+  
+            <ion-label color="dark" stacked><h1>¿En qué año escolar te encuentras?</h1></ion-label>
+  
+            <ion-list radio-group [(ngModel)]="escolar">
+                  <ion-item no-lines>
+                    <ion-label>4°</ion-label>
+                    <ion-radio value="cuarto" checked></ion-radio>
+                  </ion-item>
+                  <ion-item no-lines>
+                    <ion-label>5°</ion-label>
+                    <ion-radio value="quinto"></ion-radio>
+                  </ion-item>
+                  <ion-item no-lines>
+                    <ion-label>6° Área 1</ion-label>
+                    <ion-radio value="sexto1"></ion-radio>
+                  </ion-item>
+                  <ion-item no-lines>
+                      <ion-label>6° Área 2</ion-label>
+                      <ion-radio value="sexto2"></ion-radio>
+                  </ion-item>
+                  <ion-item no-lines>
+                      <ion-label>6° Área 3</ion-label>
+                      <ion-radio value="sexto3"></ion-radio>
+                  </ion-item>
+                  <ion-item no-lines>
+                      <ion-label>6° Área 4</ion-label>
+                      <ion-radio value="sexto4"></ion-radio>
+                  </ion-item>
+                  <ion-item>
+                      <ion-label>6° Área 5</ion-label>
+                      <ion-radio value="sexto5" [disabled]="isDisabled"></ion-radio>
+                  </ion-item>
+              </ion-list>
+          </ion-grid>
+  
+          <ion-grid>
+              <ion-label color="dark" stacked title="Es aquel que tiene una persona por ser originario de un país pero que tiene influencias extranjeras, lo que le permite dominar tanto el idioma de su país como el extranjero. Un ejemplo podría ser un niño que vive en México y tiene un padre americano con el que habla inglés en casa."><h1>¿Eres bilingüe nativo?</h1></ion-label>
+  
+              <ion-list radio-group [(ngModel)]="bilingue1">
+                  <ion-item no-lines>
+                      <ion-label>Sí</ion-label>
+                      <ion-radio value="sinativo" checked></ion-radio>
+                  </ion-item>
+                  <ion-item no-lines>
+                      <ion-label>No</ion-label>
+                      <ion-radio value="nonativo" [disabled]="isDisabled"></ion-radio>
+                  </ion-item>
+              </ion-list>
+          </ion-grid>
+  
+          <ion-grid>
+              <ion-label color="dark" stacke title="Es aquel que se adquiere cuando con una lengua materna estudia una lengua extranjera hasta conocerla y utilizarla muy bien. Por ejemplo, un niño cuya lengua materna es el español, empieza desde muy pequeñito a estudiar inglés, y termina con los años dominando este idioma."d><h2>¿Eres bilingüe adquirido?</h2></ion-label>
+  
+              <ion-list radio-group [(ngModel)]="bilingue2">
+                      <ion-item no-lines>
+                          <ion-label>Sí</ion-label>
+                          <ion-radio value="siadquirido" checked></ion-radio>
+                      </ion-item>
+                      <ion-item no-lines>
+                          <ion-label>No</ion-label>
+                          <ion-radio value="noadquirido" [disabled]="isDisabled"></ion-radio>
+                      </ion-item>
+              </ion-list>
+          </ion-grid>
+  
+          <ion-grid>
+              <ion-label color="dark" stacked><h2>¿Vive tu madre?</h2></ion-label>
+  
+              <ion-list radio-group [(ngModel)]="vivemadre">
+                      <ion-item no-lines>
+                          <ion-label>Sí</ion-label>
+                          <ion-radio value="simadre" checked></ion-radio>
+                      </ion-item>
+                      <ion-item no-lines>
+                          <ion-label>No</ion-label>
+                          <ion-radio value="nomadre" [disabled]="isDisabled"></ion-radio>
+                      </ion-item>
+              </ion-list>
+          </ion-grid>
+  
+          <ion-grid>
+            <ion-label color="dark" stacked><h2>¿Cuál es la escolaridad de tu madre (o tutora)?</h2></ion-label>
+  
+            <div class = "row">
+              <div class = "col">
+                  <ion-list radio-group [(ngModel)]="escolarmama">
+                      <ion-item no-lines>
+                          <ion-label>No estudió</ion-label>
+                          <ion-radio value="noestudiomama" checked></ion-radio>
+                      </ion-item>
+                      <ion-item no-lines>
+                          <ion-label>Primaria incompleta</ion-label>
+                          <ion-radio value="noprimariamama"></ion-radio>
+                      </ion-item>
+                      <ion-item no-lines>
+                          <ion-label>Primaria completa</ion-label>
+                          <ion-radio value="primariamama"></ion-radio>
+                      </ion-item>
+                      <ion-item no-lines>
+                          <ion-label>Secundaria incompleta</ion-label>
+                          <ion-radio value="nosecundariamama"></ion-radio>
+                      </ion-item>
+                      <ion-item no-lines>
+                          <ion-label>Secundaria completa</ion-label>
+                          <ion-radio value="secundariamama"></ion-radio>
+                      </ion-item>
+                      <ion-item no-lines>
+                          <ion-label>Carrera comercial</ion-label>
+                          <ion-radio value="comercialmama"></ion-radio>
+                      </ion-item>
+                      <ion-item no-lines>
+                          <ion-label>Carrera técnica</ion-label>
+                          <ion-radio value="tecnicamama"></ion-radio>
+                      </ion-item>
+                  </ion-list>
+              </div>
+  
+              <div class = "col col-offset-25">
+                  <ion-list radio-group [(ngModel)]="escolarmama">
+                      <ion-item no-lines>
+                          <ion-label>Preparatoria incompleta</ion-label>
+                          <ion-radio value="noprepamama" checked></ion-radio>
+                      </ion-item>
+                      <ion-item no-lines>
+                          <ion-label>Preparatoria completa</ion-label>
+                          <ion-radio value="prepamama"></ion-radio>
+                      </ion-item>
+                      <ion-item no-lines>
+                          <ion-label>Licenciatura incompleta</ion-label>
+                          <ion-radio value="nolicmama"></ion-radio>
+                      </ion-item>
+                      <ion-item no-lines>
+                          <ion-label>Licenciatura completa</ion-label>
+                          <ion-radio value="licmama"></ion-radio>
+                      </ion-item>
+                      <ion-item no-lines>
+                          <ion-label>Diplomado o maestría</ion-label>
+                          <ion-radio value="diplomadomama"></ion-radio>
+                      </ion-item>
+                      <ion-item no-lines>
+                          <ion-label>Doctorado</ion-label>
+                          <ion-radio value="doctoradomama" [disabled]="isDisabled"></ion-radio>
+                      </ion-item>
+                  </ion-list>
+              </div>
+            </div>
+  
+          </ion-grid>
+  
+          <ion-grid>
+              <ion-label color="dark" stacked><h2>¿A qué se dedica tu madre?</h2></ion-label>
+    
+              <div class = "row">
+                  <div class = "col">
+                      <ion-list radio-group [(ngModel)]="dedicamama">
+                          <ion-item no-lines>
+                              <ion-label>Al hogar</ion-label>
+                              <ion-radio value="hogarmama"></ion-radio>
+                          </ion-item>
+                          <ion-item no-lines>
+                              <ion-label>Es empleada en institución pública</ion-label>
+                              <ion-radio value="publicamama"></ion-radio>
+                          </ion-item>
+                          <ion-item no-lines>
+                              <ion-label>Es empleada en institución privada</ion-label>
+                              <ion-radio value="privadamama"></ion-radio>
+                          </ion-item>
+                      </ion-list>  
+                  </div>
+    
+                  <div class = "col col-offset-25">
+                      <ion-list radio-group [(ngModel)]="dedicamama">
+                          <ion-item no-lines>
+                              <ion-label>Negocio propio</ion-label>
+                              <ion-radio value="propiomama"></ion-radio>
+                          </ion-item>
+                          <ion-item no-lines>
+                              <ion-label>No trabaja</ion-label>
+                              <ion-radio value="ntrabajomama"></ion-radio>
+                          </ion-item>
+                          <ion-item no-lines>
+                              <ion-label>Es jubilada</ion-label>
+                              <ion-radio value="jubilada mama"></ion-radio>
+                          </ion-item>
+                      </ion-list>
+                  </div>
+              </div>
+            </ion-grid>
+  
+            <ion-grid>
+                <ion-label color="dark" stacked><h2>¿Vive tu padre?</h2></ion-label>
+                <ion-list radio-group [(ngModel)]="vivepadre">
+                      <ion-item no-lines>
+                          <ion-label>Sí</ion-label>
+                          <ion-radio value="sipadre" checked></ion-radio>
+                      </ion-item>
+                      <ion-item no-lines>
+                          <ion-label>No</ion-label>
+                          <ion-radio value="nopadre" [disabled]="isDisabled"></ion-radio>
+                      </ion-item>
+              </ion-list>
+            </ion-grid>
+  
+            <ion-grid>
+                  <ion-label color="dark" stacked><h2>¿Cuál es la escolaridad de tu padre (o tutor)?</h2></ion-label>
+  
+                  <div class = "row">
+                    <div class = "col">
+                        <ion-list radio-group [(ngModel)]="escolarpapa">
+                            <ion-item no-lines>
+                                <ion-label>No estudió</ion-label>
+                                <ion-radio value="noestudiopapa" checked></ion-radio>
+                            </ion-item>
+                            <ion-item no-lines>
+                                <ion-label>Primaria incompleta</ion-label>
+                                <ion-radio value="noprimariapapa"></ion-radio>
+                            </ion-item>
+                            <ion-item no-lines>
+                                <ion-label>Primaria completa</ion-label>
+                                <ion-radio value="primariapapa"></ion-radio>
+                            </ion-item>
+                            <ion-item no-lines>
+                                <ion-label>Secundaria incompleta</ion-label>
+                                <ion-radio value="nosecundariapapa"></ion-radio>
+                            </ion-item>
+                            <ion-item no-lines>
+                                <ion-label>Secundaria completa</ion-label>
+                                <ion-radio value="secundariapapa"></ion-radio>
+                            </ion-item>
+                            <ion-item no-lines>
+                                <ion-label>Carrera comercial</ion-label>
+                                <ion-radio value="comercialpapa"></ion-radio>
+                            </ion-item>
+                            <ion-item no-lines>
+                                <ion-label>Carrera técnica</ion-label>
+                                <ion-radio value="tecnicapapa"></ion-radio>
+                            </ion-item>
+                        </ion-list>
+                    </div>
+        
+                    <div class = "col col-offset-25">
+                        <ion-list radio-group [(ngModel)]="escolarpapa">
+                            <ion-item no-lines>
+                                <ion-label>Preparatoria incompleta</ion-label>
+                                <ion-radio value="noprepapapa" checked></ion-radio>
+                            </ion-item>
+                            <ion-item no-lines>
+                                <ion-label>Preparatoria completa</ion-label>
+                                <ion-radio value="prepapapa"></ion-radio>
+                            </ion-item>
+                            <ion-item no-lines>
+                                <ion-label>Licenciatura incompleta</ion-label>
+                                <ion-radio value="nolicpapa"></ion-radio>
+                            </ion-item>
+                            <ion-item no-lines>
+                                <ion-label>Licenciatura completa</ion-label>
+                                <ion-radio value="licpapa"></ion-radio>
+                            </ion-item>
+                            <ion-item no-lines>
+                                <ion-label>Diplomado o maestría</ion-label>
+                                <ion-radio value="diplomadopapa"></ion-radio>
+                            </ion-item>
+                            <ion-item no-lines>
+                                <ion-label>Doctorado</ion-label>
+                                <ion-radio value="doctoradopapa" [disabled]="isDisabled"></ion-radio>
+                            </ion-item>
+                        </ion-list>
+                    </div>
+                  </div>
+      
+              </ion-grid>
+  
+              <ion-grid>
+                      <ion-label color="dark" stacked><h2>¿A qué se dedica tu padre?</h2></ion-label>
+    
+                      <div class = "row">
+                          <div class = "col">
+                              <ion-list radio-group [(ngModel)]="dedicapapa">
+                                  <ion-item no-lines>
+                                      <ion-label>Al hogar</ion-label>
+                                      <ion-radio value="hogarpapa"></ion-radio>
+                                  </ion-item>
+                                  <ion-item no-lines>
+                                      <ion-label>Es empleado en institución pública</ion-label>
+                                      <ion-radio value="publicapapa"></ion-radio>
+                                  </ion-item>
+                                  <ion-item no-lines>
+                                      <ion-label>Es empleado en institución privada</ion-label>
+                                      <ion-radio value="privadapapa"></ion-radio>
+                                  </ion-item>
+                              </ion-list>  
+                          </div>
+            
+                          <div class = "col col-offset-25">
+                              <ion-list radio-group [(ngModel)]="dedicapapa">
+                                  <ion-item no-lines>
+                                      <ion-label>Negocio propio</ion-label>
+                                      <ion-radio value="propiopapa"></ion-radio>
+                                  </ion-item>
+                                  <ion-item no-lines>
+                                      <ion-label>No trabaja</ion-label>
+                                      <ion-radio value="notrabajopapa"></ion-radio>
+                                  </ion-item>
+                                  <ion-item no-lines>
+                                      <ion-label>Es jubilado</ion-label>
+                                      <ion-radio value="jubiladopapa"></ion-radio>
+                                  </ion-item>
+                              </ion-list>
+                          </div>
+                      </div>
+                </ion-grid>
+        
+          <ion-item>
+            <ion-label color="dark" floating>Floating Label</ion-label>
+            <ion-input></ion-input>
+          </ion-item>
+        
+          <ion-item>
+            <ion-input placeholder="Clear Input" clearInput></ion-input>
+          </ion-item>
+        
+          <ion-item>
+            <ion-textarea placeholder="Enter a description"></ion-textarea>
+          </ion-item>
+    </ion-list>
+  
+  </ion-content>
+  
+  <ion-footer>
+      <ion-toolbar>
+  
+        <ion-buttons right>
+            <button ion-button icon-end [navPush]="segundaPage">
+                Siguiente
+                <ion-icon name="arrow-round-forward"></ion-icon>
+            </button>
+        </ion-buttons>
+      </ion-toolbar>
+  </ion-footer>

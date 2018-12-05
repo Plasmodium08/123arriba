@@ -1,0 +1,74 @@
+<!--
+  Generated template for the SegundaPage page.
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>segunda</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list>
+      <ion-grid class="color1">
+          <ion-label color="dark" stacked><h2>En los últimos seis meses, ¿has recibido atención psicológica?</h2></ion-label>
+            <ion-list radio-group [(ngModel)]="psicologica">
+              <ion-item no-lines class="color1">
+                  <ion-label>Sí</ion-label>
+                  <ion-radio value="sipsico"></ion-radio>
+              </ion-item>
+              <ion-item no-lines class="color1">
+                  <ion-label>No</ion-label>
+                  <ion-radio value="nopsico"></ion-radio>
+              </ion-item>
+            </ion-list>
+      </ion-grid>
+
+      <ion-grid class="color2">
+          <ion-label color="dark" stacked><h2>En los últimos seis meses, ¿has recibido atención psiquiátrica?</h2></ion-label>
+          <ion-list radio-group [(ngModel)]="psiquiatrica">
+              <ion-item no-lines class="color2">
+                  <ion-label>Sí</ion-label>
+                  <ion-radio value="sipsiquia"></ion-radio>
+              </ion-item>
+              <ion-item no-lines class="color2">
+                  <ion-label>No</ion-label>
+                  <ion-radio value="nopsiquia"></ion-radio>
+              </ion-item>
+            </ion-list>
+      </ion-grid>
+
+      <ion-grid class="color1">
+          <ion-label color="dark" stacked><h2>¿Actualmente estás tomando medicamentos indicados por un médico para problemas de ansiedad, depresión,<P></P>irritabilidad, falta de atención, para manejar tus emociones?</h2></ion-label>
+          <ion-list radio-group [(ngModel)]="medicamentos">
+            <ion-item no-lines class="color1">
+              <ion-label>Sí</ion-label>
+              <ion-radio value="simedicina"></ion-radio>
+            </ion-item>
+            <ion-item no-lines class="color1">
+              <ion-label>No</ion-label>
+              <ion-radio value="nomedicina"></ion-radio>
+            </ion-item>
+          </ion-list>
+      </ion-grid>
+      
+  </ion-list>
+
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar color="">
+
+      <ion-buttons right>
+          <button ion-button icon-end [navPush]="terceraPage">
+              Siguiente
+              <ion-icon name="arrow-round-forward"></ion-icon>
+          </button>
+      </ion-buttons>
+    </ion-toolbar>
+</ion-footer>

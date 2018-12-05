@@ -1,0 +1,87 @@
+<!--
+  Generated template for the PrivacidadPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <!--<ion-navbar>
+    <ion-title>Aviso de Privacidad</ion-title>
+  </ion-navbar>-->
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-col align="center">
+    <h2>
+      <p><b>Título del proyecto: </b> Mi primer Sistema Experto :)</p>
+      <p><b>Registro</b></p>
+      <p></p>
+      <p><b>Investigador(a): </b></p>
+      <p><b>Nombre: </b> Mtra. Psic. Aurora Jaimes Medrano</p>
+      <p><b>Domicilio: </b> ... </p>
+      <p><b>Teléfono: </b> 044-55-5527282066</p>
+      <p><b>Correo electrónico:</b> aurorajaimes@gmail.com</p>
+      <p></p>
+      <p><b><u>Tipo de información que se solicitará: </u></b></p>
+      <p>
+        Su información personal será utilizada con la finalidad de (Poner la finalidad), para lo 
+        cual requerimos obtener los siguientes datos personales: (Poner los datos solicitados), 
+        así como otros datos considerados como sensibles de acuerdo a la Ley Federal de Protección de 
+        Datos Personales en Posesión de los Particulares, tales como: (Poner datos solicitados).
+      </p>
+      <p>
+        Es importante que usted sepa que todo el equipo de investigación que colabora en este estudio 
+        se compromete a que todos los datos proporcionados por usted sean tratados bajo medidas de 
+        seguiridad y garantizando siempre su confidencialidad. En el caso de este proyecto las medidas
+        que se tomarán para ello serán: (Describir tipos de medidas).
+      </p>
+      <p>
+        Usted tiene derecho a acceder, rectificar y cancelar sus datos personales, así como de oponerse
+        al manejo de los mismos o anular el consentimiento que nos haya otorgado para tal fin, presentando
+        una carta dirigida a el/la Investigador(a) Responsable [Mtra. Psic. Aurora Jaimnes Medrano, ubicación,
+        dirección, teléfono: 044-55-5527282066, email: aurorajaimes@gmail.com] o a la oficina del Comité de
+        Ética en Investigación de la Facultad de Medicina UNAM ubicada ..... email: @.mx.
+      </p>
+      <p>
+        Asimismo, le aclaramos que la información de sus datos personales puede ser compartida y manejada por 
+        personas distintas a esta institución. En este caso se conpartiría con [Datos del destinatario], con la
+        finalidad de (describir finalidad).
+      </p>
+    </h2>
+      <ion-row>
+        <ion-col align="left"><h3>INSTITUTO NACIONAL DE SALUD PÚBLICA</h3></ion-col>
+        <ion-col align="right"><h3>Versión 2 aprobada CEI <p>Fecha de aprobación: 7/octubre/2013</p></h3></ion-col>
+      </ion-row>
+
+  </ion-col>
+
+  <ion-col>
+    <ion-item></ion-item>
+    <p><b><u><h1>Declaración de conformidad</h1></u></b></p>
+    <p><b><h2>Si usted no manifiesta oposición para que sus datos personales se compartan con las
+      instancias mencionadas, se entenderá que ha otorgado su consentimiento para ello.
+    </h2></b></p>
+    <ion-buttons>
+        <button ion-button icon-end [navPush]="registroPage">
+            Acepto
+            <ion-icon name="happy"></ion-icon>
+        </button>
+    </ion-buttons>
+    <p><b><h2>En caso de no estar de acuerdo favor de dar click en el siguiente botón</h2></b></p>
+    <ion-buttons>
+        <button ion-button color= "danger" icon-end [navPush]="homePage">
+            No acepto
+            <ion-icon name="sad"></ion-icon>
+        </button>
+    </ion-buttons>
+    <ion-buttons right>
+        <button ion-button icon-end [navPush]="naranjaPage">
+            Siguiente
+            <ion-icon name="arrow-round-forward"></ion-icon>
+        </button>
+    </ion-buttons>
+  </ion-col>
+</ion-content>

@@ -1,0 +1,65 @@
+<!--
+  Generated template for the HomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-grid>
+      <ion-row>
+        <ion-col align="left" background="white">
+          <ion-img width="200" height="200" src="http://www.ingenieria.unam.mx/images/agenda/escudo.gif"></ion-img>
+        </ion-col>
+        
+        <ion-col align="right">
+          <ion-img bg="white" width="200" height="200" src="https://congresolicenciaturacienciaforense.files.wordpress.com/2015/01/medicinaazulfuerte.jpg"></ion-img>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+          <ion-col align="center">
+              <h1>Este cuestionario es parte de un estudio que tiene como objetivo conocer las  conductas y actitudes  de los adolescentes en su vida cotidiana. Al finalizarlo  conocerás las áreas que representan fortalezas y  sugerencias para mejorar  otras.</h1> 
+          </ion-col>
+      </ion-row>
+
+      <ion-row bottom>
+          <ion-col align="center">
+              <h2>Tu participación es <b>importante</b>, <b>valiosa y voluntaria</b>, 
+                si estás de acuerdo en responderlo te pedimos  dar click en el aviso de privacidad.</h2>
+          </ion-col>
+      </ion-row>
+
+    </ion-grid>
+    
+    <ion-fab bottom left >
+        <ion-col stacked>
+            <ion-img width="70px" height="70px" src="http://www.ingenieria.unam.mx/cia/imagenes/LogoCIA.jpg" ></ion-img>
+        </ion-col>
+        <ion-col stacked>
+            <b>Desarrollado por: Alejandro, Brian y Mario</b>
+        </ion-col>
+    </ion-fab>
+
+</ion-content>
+
+<ion-footer no-shadow>
+  <ion-toolbar color="danger">
+    <ion-buttons left>
+        <button ion-button [navPush]="privacidadPage">
+            Aviso de Privacidad
+        </button>
+    </ion-buttons>
+    <!--<ion-buttons right>
+        <button ion-button icon-end [navPush]="registroPage">
+            Siguiente
+            <ion-icon name="arrow-round-forward"></ion-icon>
+        </button>
+    </ion-buttons>-->
+  </ion-toolbar>
+</ion-footer>
